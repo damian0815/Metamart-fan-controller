@@ -45,6 +45,8 @@ void testApp::update(){
         fans.send();
     }*/
 
+    fans.send();
+    
     
     /*
 	ofxOscMessage m;
@@ -85,14 +87,12 @@ void testApp::draw(){
 void testApp::keyPressed(int key){
     if ( key == '0' )
     {
-        fans.set(1,false);
-        fans.set(0,false);
+        fans.setBase(selected_fan, false);
     }
     
     else if ( key == '1' )
     {
-        fans.set(1,true);
-        fans.set(0,true);
+        fans.setBase(selected_fan, true);
     }
     
     
@@ -110,7 +110,6 @@ void testApp::keyPressed(int key){
     
     else if ( key == OF_KEY_RIGHT )
     {
-        fans.setBase( selected_fan, false );
         selected_fan++;
         if ( selected_fan >= fans.getNumBaseFans() )
             selected_fan = 0;
@@ -119,7 +118,6 @@ void testApp::keyPressed(int key){
     }
     else if ( key == OF_KEY_LEFT )
     {
-        fans.setBase( selected_fan, false );
         selected_fan--;
         if ( selected_fan < 0 )
             selected_fan = fans.getNumBaseFans()-1;
@@ -127,10 +125,13 @@ void testApp::keyPressed(int key){
         status = "selected base "+ofToString(selected_fan);
     }
     
-    else if ( key == OF_KEY_RETURN )
+    else if ( key == 'A' )
     {
         fans.setActive( selected_fan, !fans.isActive(selected_fan) );
     }
+    
+    else
+        fans.keyPressed( key );
     
 }
 

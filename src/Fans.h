@@ -23,7 +23,8 @@ public:
     void load();
     void save();
     
-    int getNumFans() { return active_fan_indices.size(); }
+    int getNumFans() { return getNumActiveFans(); }
+    int getNumActiveFans() { return active_fan_indices.size(); }
     bool get( int index );
     void set( int index, bool val );
     
@@ -35,6 +36,10 @@ public:
     void draw();
 
     
+    /// turn on all the fans between low and high (0..1)
+    void illuminateHeightRange( float low, float high );
+    
+    
     void setActive( int which_fan_base, bool active );
     bool isActive( int which_fan_base ) { 
         return std::find(active_fan_indices.begin(), active_fan_indices.end(), which_fan_base) 
@@ -42,6 +47,8 @@ public:
     };
     
 
+    void keyPressed( int key );
+    
     void send();
 
 private:

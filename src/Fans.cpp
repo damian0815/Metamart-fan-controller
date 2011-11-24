@@ -126,6 +126,10 @@ void Fans::draw()
         else
             x += size;
     }
+    
+    x = 0;
+    size = ofGetWidth()/getNumActiveFans();
+    
 }
 
 
@@ -176,3 +180,32 @@ void Fans::setActive( int which_fan_base, bool active )
     }
 }
     
+void Fans::illuminateHeightRange( float low, float high )
+{
+    for ( int i=0; i<getNumBaseFans(); i++ )
+    {
+        if ( height[i] >= low && height[i] <= high )
+            fans[i] = true;
+        else
+            fans[i] = false;
+    }
+    send();
+}
+
+
+void Fans::keyPressed( int key )
+{
+    if ( selected_base < 0 || selected_base >= getNumBaseFans() )
+        return;
+    
+    if ( key == OF_KEY_UP )
+    {
+        height[selected_base] = min(height[selected_base]+0.05f, 1.0f);
+    }
+    else if ( key == OF_KEY_DOWN )
+    {
+        height[selected_base] = max(height[selected_base]-0.05f, 0.0f);
+    }
+    
+}
+
