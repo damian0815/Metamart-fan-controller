@@ -18,21 +18,33 @@ void testApp::setup(){
 	osc_sender.setup( osc_host, osc_port );
     
     fans.setup();
+    selected_fan = -1;
     
     status = "";
+    timer = 0.0f;
+    
+    fans.send();
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
 	
-    for ( int i=fans.getNumFans()-1; i>0; i-- )
+    /*
+    timer -= ofGetLastFrameTime();
+    if ( timer < 0 )
     {
-        fans.set( i, fans.get(i-1) );
-    }
-    fans.set(0, fans.get(NUM_FANS-1));
-    fans.send();
+        timer += 1.0f;
+        for ( int i=fans.getNumFans()-1; i>0; i-- )
+        {
+            fans.set( i, fans.get(i-1) );
+        }
+        fans.set(0, fans.get(fans.getNumFans()-1));
+        
+        //fans.setBase(selected_fan, (ofGetElapsedTimeMillis()%500)>250 );
+        
+        fans.send();
+    }*/
 
-    
     
     /*
 	ofxOscMessage m;
@@ -93,6 +105,31 @@ void testApp::keyPressed(int key){
     {
         fans.load();
         status = "loaded";
+    }
+    
+    
+    else if ( key == OF_KEY_RIGHT )
+    {
+        fans.setBase( selected_fan, false );
+        selected_fan++;
+        if ( selected_fan >= fans.getNumBaseFans() )
+            selected_fan = 0;
+        fans.selectFromBase( selected_fan );
+        status = "selected base "+ofToString(selected_fan);
+    }
+    else if ( key == OF_KEY_LEFT )
+    {
+        fans.setBase( selected_fan, false );
+        selected_fan--;
+        if ( selected_fan < 0 )
+            selected_fan = fans.getNumBaseFans()-1;
+        fans.selectFromBase( selected_fan );
+        status = "selected base "+ofToString(selected_fan);
+    }
+    
+    else if ( key == OF_KEY_RETURN )
+    {
+        fans.setActive( selected_fan, !fans.isActive(selected_fan) );
     }
     
 }

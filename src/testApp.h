@@ -30,9 +30,11 @@ class testApp : public ofBaseApp{
     
     
     Fans fans;
+
+    int selected_fan;
+    
     
     string status;
-    
     float timer;
     
     

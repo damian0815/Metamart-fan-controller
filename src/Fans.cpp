@@ -26,7 +26,14 @@ void Fans::setup()
     {
         fans[i] = false;
         active_fan_indices.push_back( i );
+        angles[i] = (i*(360.0f/NUM_FANS));
+        radius[i] = 0.5f;
+        height[i] = 0.5f;
     }
+    
+    load();
+    
+    selected_base = -1;
 }
 
 void Fans::load()
@@ -59,7 +66,7 @@ void Fans::save()
     {
         data.addTag("fan");
         data.pushTag("fan", i );
-        data.addValue("active", std::find(active_fan_indices.begin(), active_fan_indices.end(), i) != active_fan_indices.end() );
+        data.addValue("active", isActive(i) );
         data.addValue("angle", angles[i] );
         data.addValue("radius", radius[i] );
         data.addValue("height", height[i] );
@@ -93,12 +100,18 @@ void Fans::update()
 
 void Fans::draw()
 {
-
     float x = 10;
     float y = 10;
     float size = 10;
     for ( int i=0; i<NUM_FANS; i++ )
     {
+        if ( selected_base == i )
+            ofSetHexColor( 0xff0000 );
+        else if ( isActive(i) )
+            ofSetHexColor( 0xffffff );
+        else 
+            ofSetHexColor( 0x333333 );
+
         if ( fans[i] )
             ofFill();
         else
@@ -113,8 +126,6 @@ void Fans::draw()
         else
             x += size;
     }
-    
-
 }
 
 
@@ -130,7 +141,10 @@ void Fans::send()
         unsigned char byte = 0;
         for ( int j=0; j<8; j++ )
         {
-            int which_fan = i*8+j;
+//            int which_fan = (i/2)*16 + (2-(i%2))*8 + (7-j);
+            int which_fan = (i/2)*16;
+            which_fan += 16-((i%2)*8 + j);
+            
             if ( fans[which_fan] )
             {
                 byte |= (0b00000001 << j );
@@ -144,7 +158,21 @@ void Fans::send()
 }
 
 
-
-
-
-
+void Fans::setActive( int which_fan_base, bool active ) 
+{ 
+    if ( which_fan_base < 0 || which_fan_base >= getNumBaseFans() )
+        return;
+    
+    if ( isActive(which_fan_base) && !active )
+    {
+        active_fan_indices.erase( std::find(active_fan_indices.begin(), 
+                                            active_fan_indices.end(), 
+                                            which_fan_base ) );
+    }
+    else if ( !isActive(which_fan_base) && active )
+    {
+        active_fan_indices.push_back( which_fan_base );
+        std::sort( active_fan_indices.begin(), active_fan_indices.end() );
+    }
+}
+    

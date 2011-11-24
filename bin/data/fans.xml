@@ -1,770 +1,770 @@
 <fans>
     <fan>
-        <active>1</active>
+        <active>0</active>
         <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>2.8125</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>5.625</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>8.4375</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>11.25</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>14.0625</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>16.875</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>19.6875</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>22.5</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>25.3125</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>28.125</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>30.9375</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>33.75</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>36.5625</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>39.375</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>42.1875</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>45</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>47.8125</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>50.625</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>53.4375</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>56.25</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>59.0625</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>61.875</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>64.6875</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>67.5</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>70.3125</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>73.125</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>75.9375</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>78.75</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>81.5625</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>84.375</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>87.1875</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>90</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>92.8125</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>95.625</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>98.4375</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>101.25</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>104.062</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>106.875</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>109.688</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>112.5</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>115.312</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>118.125</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>120.938</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>123.75</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>126.562</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>129.375</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>132.188</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>135</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>137.812</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>140.625</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>143.438</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>146.25</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>149.062</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>151.875</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>154.688</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>157.5</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>160.312</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>163.125</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>165.938</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>168.75</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>171.562</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>174.375</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>177.188</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>180</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>182.812</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>185.625</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>188.438</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>191.25</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>194.062</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>196.875</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>199.688</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>202.5</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>205.312</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>208.125</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>210.938</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>213.75</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>216.562</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>219.375</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>222.188</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>225</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>227.812</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>230.625</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>233.438</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>236.25</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>239.062</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>241.875</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>244.688</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>247.5</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>250.312</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>253.125</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>255.938</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>258.75</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>261.562</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>264.375</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>267.188</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>270</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>272.812</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>275.625</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>278.438</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>281.25</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>284.062</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>286.875</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>289.688</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>292.5</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
         <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <angle>295.312</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>298.125</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>300.938</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>303.75</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>306.562</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>309.375</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>312.188</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>315</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>317.812</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>320.625</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>323.438</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>326.25</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>329.062</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>331.875</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>334.688</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>337.5</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>340.312</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>343.125</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>345.938</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>348.75</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>351.562</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>354.375</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
     <fan>
-        <active>1</active>
-        <angle>0</angle>
-        <radius>0</radius>
-        <height>0</height>
+        <active>0</active>
+        <angle>357.188</angle>
+        <radius>0.5</radius>
+        <height>0.5</height>
     </fan>
 </fans>

@@ -27,18 +27,32 @@ public:
     bool get( int index );
     void set( int index, bool val );
     
+    int getNumBaseFans() { return NUM_FANS; }
+    int selectFromBase( int index ) { selected_base = index; }
+    void setBase( int index, bool val ) { fans[index] = val; }
+    
     void update();
     void draw();
 
     
+    void setActive( int which_fan_base, bool active );
+    bool isActive( int which_fan_base ) { 
+        return std::find(active_fan_indices.begin(), active_fan_indices.end(), which_fan_base) 
+        != active_fan_indices.end(); 
+    };
+    
+
     void send();
 
 private:
     
     
+    
     ofSerial serial;
     
 
+    int selected_base;
+    
     vector<int> active_fan_indices;
     bool fans[NUM_FANS];
     
