@@ -28,11 +28,13 @@ class testApp : public ofBaseApp{
 	
 	ofxOscSender osc_sender;
     
+    ofxOscReceiver osc_receiver;
     
     Fans fans;
 
     int selected_fan;
     
+    float hrange_h, hrange_l;
     
     string status;
     float timer;

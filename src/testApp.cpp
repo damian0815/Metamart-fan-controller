@@ -24,11 +24,25 @@ void testApp::setup(){
     timer = 0.0f;
     
     fans.send();
+    
+    osc_receiver.setup( 9090 );
+    
+    hrange_l = 0;
+    hrange_h = 0;
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
 	
+    while ( osc_receiver.hasWaitingMessages() )
+    {
+        ofxOscMessage m;
+        osc_receiver.getNextMessage(&m);
+        
+        
+        
+    }
+    
     /*
     timer -= ofGetLastFrameTime();
     if ( timer < 0 )
@@ -44,6 +58,13 @@ void testApp::update(){
         
         fans.send();
     }*/
+    
+    /*
+    if ( hrange_l != hrange_h )
+    {
+        fans.illuminateHeightRange(min(hrange_l,hrange_h), max(hrange_l,hrange_h));
+    }*/
+    fans.illuminateHeightRange( 0.0f, sinf(ofGetElapsedTimef())*0.5f+0.5f );
 
     fans.send();
     
@@ -124,12 +145,26 @@ void testApp::keyPressed(int key){
         fans.selectFromBase( selected_fan );
         status = "selected base "+ofToString(selected_fan);
     }
-    
+
     else if ( key == 'A' )
-    {
         fans.setActive( selected_fan, !fans.isActive(selected_fan) );
-    }
     
+    else if ( key == 'l' )
+    {
+        hrange_l -= 0.1f;
+    }
+    else if ( key == 'L' )
+    {
+        hrange_l += 0.1f;
+    }
+    else if ( key == 'h' )
+    {
+        hrange_h += 0.1f;
+    }
+    else if ( key == 'H' )
+    {
+        hrange_h -= 0.1f; 
+    }
     else
         fans.keyPressed( key );
     

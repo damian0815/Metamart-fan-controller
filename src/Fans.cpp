@@ -127,8 +127,30 @@ void Fans::draw()
             x += size;
     }
     
-    x = 0;
-    size = ofGetWidth()/getNumActiveFans();
+    x = 10;
+    y += 10+size;
+    ofSetHexColor(0x000000);
+    float h = y;
+    ofLine( 0, h, ofGetWidth(), h );
+    h += 300;
+    ofLine( 0, h, ofGetWidth(), h );
+    float step = ofGetWidth()/getNumActiveFans();
+    for ( int i=0; i<getNumActiveFans(); i++ )
+    {
+        int active_index = active_fan_indices[i];
+        if ( selected_base == active_index )
+            ofSetHexColor( 0xff0000 );
+        else
+            ofSetHexColor( 0xffffff );
+        
+        if ( get(i) )
+            ofFill();
+        else
+            ofNoFill();
+
+        ofRect( x, y+(1.0f-height[active_index])*300, size, size );
+        x += step;
+    }
     
 }
 
@@ -200,11 +222,11 @@ void Fans::keyPressed( int key )
     
     if ( key == OF_KEY_UP )
     {
-        height[selected_base] = min(height[selected_base]+0.05f, 1.0f);
+        height[selected_base] = min(height[selected_base]+0.01f, 1.0f);
     }
     else if ( key == OF_KEY_DOWN )
     {
-        height[selected_base] = max(height[selected_base]-0.05f, 0.0f);
+        height[selected_base] = max(height[selected_base]-0.01f, 0.0f);
     }
     
 }
