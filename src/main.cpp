@@ -1,13 +1,15 @@
 #include "ofMain.h"
 #include "testApp.h"
 #include "ofAppGlutWindow.h"
-//#include "ofAppNoWindow.h"
+#include "ofAppNoWindow.h"
 
 //========================================================================
 int main( ){
-
+#ifdef TARGET_LINUX
+	ofAppNoWindow window;
+#else
     ofAppGlutWindow window;
-//	ofAppNoWindow window;
+#endif
 	ofSetupOpenGL(&window, 1024,768, OF_WINDOW);			// <-------- setup the GL context
 
 	// this kicks off the running of my app

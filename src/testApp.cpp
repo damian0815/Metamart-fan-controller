@@ -40,9 +40,34 @@ void testApp::update(){
         osc_receiver.getNextMessage(&m);
         
         ofLog(OF_LOG_VERBOSE, "got osc: address %s", m.getAddress().c_str() );
-        
-    }
-    
+		amount.resize(4);
+ 		price.resize(4);		
+		for ( int i=0; i<4; i++ )
+		{
+			char buf[1024];
+			sprintf( buf, "/mtgox/trades/%i/price" );
+			if ( m.getAddress() == buf  )
+				price[i] = m.getFloatArg(0);
+			sprintf( buf, "/mtgox/trades/%i/amount" );
+			if ( m.getAddress() == buf  )
+				amount[i] = m.getFloatArg(0);
+
+	    }
+	}
+	low_amount = amount[0];
+	low_price = price[0];
+	high_amount = low_amount;
+	high_price = low_price;
+	for ( int i=1; i<amount.size(); i++ )
+	{
+		low_amount = min(low_amount, amount[i] );
+		low_price = min (low_price, price[i] );
+		high_amount = max(high_amount, amount[i] );
+		high_price = max (high_price, price[i] );
+	}
+	last_price = price.back();
+	last_amount = amount.back();
+
     /*
     timer -= ofGetLastFrameTime();
     if ( timer < 0 )
