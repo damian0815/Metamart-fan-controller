@@ -1,6 +1,8 @@
 #include "testApp.h"
 #include "ofxXmlSettings.h"
 
+static const int NUM_TRADE_BITS = 4;
+
 //--------------------------------------------------------------
 void testApp::setup(){
 	
@@ -23,12 +25,18 @@ void testApp::setup(){
     status = "";
     timer = 0.0f;
     
+    price.resize(NUM_TRADE_BITS);
+    amount.resize(NUM_TRADE_BITS);
+    
     fans.send();
     
     osc_receiver.setup( 9090 );
     
     hrange_l = 0;
     hrange_h = 0;
+    
+    state = Trade;
+    nextState();
 }
 
 //--------------------------------------------------------------
@@ -40,33 +48,32 @@ void testApp::update(){
         osc_receiver.getNextMessage(&m);
         
         ofLog(OF_LOG_VERBOSE, "got osc: address %s", m.getAddress().c_str() );
-		amount.resize(4);
- 		price.resize(4);		
-		for ( int i=0; i<4; i++ )
+	
+		for ( int i=0; i<price.size(); i++ )
 		{
 			char buf[1024];
-			sprintf( buf, "/mtgox/trades/%i/price" );
+			sprintf( buf, "/mtgox/trades/%i/price",i );
 			if ( m.getAddress() == buf  )
-				price[i] = m.getFloatArg(0);
-			sprintf( buf, "/mtgox/trades/%i/amount" );
+				price[i] = m.getArgAsFloat(0);
+			sprintf( buf, "/mtgox/trades/%i/amount",i );
 			if ( m.getAddress() == buf  )
-				amount[i] = m.getFloatArg(0);
+				amount[i] = m.getArgAsFloat(0);
 
 	    }
 	}
-	low_amount = amount[0];
-	low_price = price[0];
-	high_amount = low_amount;
-	high_price = low_price;
-	for ( int i=1; i<amount.size(); i++ )
-	{
-		low_amount = min(low_amount, amount[i] );
-		low_price = min (low_price, price[i] );
-		high_amount = max(high_amount, amount[i] );
-		high_price = max (high_price, price[i] );
-	}
-	last_price = price.back();
-	last_amount = amount.back();
+    
+    switch ( state )
+    {
+        case Trade:
+            doTradeBits();
+            break;
+        case Hash:
+            doHashBits();
+            break;
+        default:
+            break;
+            
+    }
 
     /*
     timer -= ofGetLastFrameTime();
@@ -89,7 +96,7 @@ void testApp::update(){
     {
         fans.illuminateHeightRange(min(hrange_l,hrange_h), max(hrange_l,hrange_h));
     }*/
-    fans.illuminateHeightRange( 0.0f, sinf(ofGetElapsedTimef())*0.5f+0.5f );
+    //fans.illuminateHeightRange( 0.0f, sinf(ofGetElapsedTimef())*0.5f+0.5f );
 
     fans.send();
     
@@ -238,7 +245,79 @@ void testApp::dragEvent(ofDragInfo dragInfo){
 
 
 
+void testApp::nextState()
+{
+    switch( state )
+    {
+        case Trade:
+            timer = 5.0f;
+            intern_timer = 0.0f;
+            state = Hash;
+            break;
+        case Hash:
+            timer = 5.0f;
+            intern_timer = 0.0f;
+            state = Trade;
+            break;
+            
+    }
+    
+}
 
+void testApp::doHashBits()
+{
+    timer -= ofGetLastFrameTime();
+    if ( timer < 0 )
+    {
+        nextState();
+        return;
+    }
+    
+    intern_timer -= ofGetLastFrameTime();
+    printf("intern_timer %f\n", intern_timer );
+    
+    if ( intern_timer < 0 )
+    {
+        fans.setGroupOf8( ofRandom( 0, fans.getNumBaseFans()/8 )*8, (unsigned char)ofRandom( 0, 256 ) );
+        float t = ofRandomuf();
+        t *= t;
+        t *= 0.5f;
+        intern_timer += t;
+    }
+}
+
+
+void testApp::doTradeBits()
+{
+    timer -= ofGetLastFrameTime();
+    if ( timer < 0 ) 
+    {
+        nextState();
+        return;
+    }   
+
+    float low_amount = amount[0];
+	float low_price = price[0];
+	float high_amount = low_amount;
+	float high_price = low_price;
+	for ( int i=1; i<amount.size(); i++ )
+	{
+		low_amount = min(low_amount, amount[i] );
+		low_price = min (low_price, price[i] );
+		high_amount = max(high_amount, amount[i] );
+		high_price = max (high_price, price[i] );
+	}
+	float last_price = price.back();
+	float last_amount = amount.back();
+
+    float target_h_l = (last_amount-low_amount)/(high_amount-low_amount);
+    float target_h_h = (last_price-low_price)/(high_price-low_price);
+    
+    hrange_h = hrange_h*0.99f + target_h_h*0.01f;
+    hrange_l = hrange_l*0.99f + target_h_l*0.01f;
+    fans.illuminateHeightRange( hrange_l, hrange_h );
+    
+}
 
 
 

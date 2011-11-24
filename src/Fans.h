@@ -32,6 +32,8 @@ public:
     int selectFromBase( int index ) { selected_base = index; }
     void setBase( int index, bool val ) { fans[index] = val; }
     
+    void setGroupOf8( int which_base_start_id, unsigned char byte );
+    
     void update();
     void draw();
 

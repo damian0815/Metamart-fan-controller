@@ -231,3 +231,14 @@ void Fans::keyPressed( int key )
     
 }
 
+void Fans::setGroupOf8( int which_base_id_start, unsigned char byte )
+{
+    if ( which_base_id_start >= 0 && which_base_id_start < getNumBaseFans()-8 )
+    {
+        for ( int i=0; i<8; i++ )
+        {
+            fans[which_base_id_start+i] = (byte>>i)&0b00000001;
+        }
+    }
+}
+

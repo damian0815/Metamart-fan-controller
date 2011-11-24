@@ -39,5 +39,20 @@ class testApp : public ofBaseApp{
     string status;
     float timer;
     
+    vector<float> price;
+    vector<float> amount;
+    
+    
+    
+    enum State {
+        Trade,
+        Hash
+    } state;
+    
+    
+    float intern_timer;
+    void nextState();
+    void  doHashBits();
+    void  doTradeBits();
     
 };
