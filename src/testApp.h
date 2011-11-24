@@ -2,6 +2,7 @@
 
 #include "ofMain.h"
 #include "ofxOsc.h"
+#include "Fans.h"
 
 class testApp : public ofBaseApp{
 
@@ -26,4 +27,13 @@ class testApp : public ofBaseApp{
 	int osc_port;
 	
 	ofxOscSender osc_sender;
+    
+    
+    Fans fans;
+    
+    string status;
+    
+    float timer;
+    
+    
 };

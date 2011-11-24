@@ -16,13 +16,24 @@ void testApp::setup(){
 	
 	ofLog( OF_LOG_NOTICE, "opening OSC to %s on port %i", osc_host.c_str(), osc_port );
 	osc_sender.setup( osc_host, osc_port );
-	
+    
+    fans.setup();
+    
+    status = "";
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
 	
+    for ( int i=fans.getNumFans()-1; i>0; i-- )
+    {
+        fans.set( i, fans.get(i-1) );
+    }
+    fans.set(0, fans.get(NUM_FANS-1));
+    fans.send();
 
+    
+    
     /*
 	ofxOscMessage m;
 	m.setAddress("/tracking/activity");
@@ -46,17 +57,44 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
+    
+    fans.draw();
 
 	char buf[1024];
-	sprintf( buf, "OSC %s:%i", osc_host.c_str(), osc_port );
+	sprintf( buf, "OSC %s:%i  // %s", osc_host.c_str(), osc_port, status.c_str() );
 	ofSetHexColor( 0x000000 );
 	ofDrawBitmapString( buf, 10, ofGetHeight()-13 );
 	ofSetHexColor( 0xffffff );
 	ofDrawBitmapString( buf, 10+1, ofGetHeight()-13+1 );
+    
 }
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
+    if ( key == '0' )
+    {
+        fans.set(1,false);
+        fans.set(0,false);
+    }
+    
+    else if ( key == '1' )
+    {
+        fans.set(1,true);
+        fans.set(0,true);
+    }
+    
+    
+    else if ( key == 'W' )
+    {   
+        fans.save();
+        status = "saved";
+    }
+    else if ( key == 'L' )
+    {
+        fans.load();
+        status = "loaded";
+    }
+    
 }
 
 //--------------------------------------------------------------
@@ -98,3 +136,11 @@ void testApp::gotMessage(ofMessage msg){
 void testApp::dragEvent(ofDragInfo dragInfo){ 
 
 }
+
+
+
+
+
+
+
+
