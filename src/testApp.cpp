@@ -39,7 +39,7 @@ void testApp::update(){
         ofxOscMessage m;
         osc_receiver.getNextMessage(&m);
         
-        
+        ofLog(OF_LOG_VERBOSE, "got osc: address %s", m.getAddress().c_str() );
         
     }
     
